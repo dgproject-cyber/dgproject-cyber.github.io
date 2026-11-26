@@ -310,7 +310,7 @@ if (contatori.length) {
     caricaMedia(dopo, t.dopo);
     $("strong", info).textContent = t.titolo;
     const det = $("span", info);
-    det.textContent = t.dettagli || "Durata · obiettivo · risultato";
+    det.textContent = t.dettagli || "Qui mettiamo durata, obiettivo e risultato.";
     det.classList.toggle("slot", !t.dettagli);
     conta.textContent = `${i + 1} / ${lista.length}`;
     box.classList.remove("cambia"); void box.offsetWidth; box.classList.add("cambia");
@@ -365,7 +365,7 @@ if (contatori.length) {
       lista.appendChild(f);
     });
   } else {
-    lista.innerHTML = `<figure class="recensione recensione--vuota"><blockquote class="slot" data-slot="Recensioni Google">Qui compariranno le recensioni vere della scheda Google di Francesco.</blockquote></figure>`;
+    lista.innerHTML = `<figure class="recensione recensione--vuota"><blockquote class="slot" data-slot="Recensioni Google">Qui mettiamo le recensioni vere della tua scheda Google.</blockquote></figure>`;
   }
 
   const collega = (sel, url) => {
