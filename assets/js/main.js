@@ -45,7 +45,7 @@ function caricaMedia(box, src) {
   if (!src) return;
   const img = new Image();
   img.decoding = "async";
-  img.alt = "";
+  img.alt = box.dataset.alt || "";
   img.onload = () => {
     $$("img", box).forEach(v => v.remove());
     box.appendChild(img);
