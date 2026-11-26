@@ -259,16 +259,17 @@ p{margin:0}
 
 /* ---------- chi sono ---------- */
 .about__griglia{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:48px 24px;align-items:start}
-.about__foto{grid-column:1 / 6;margin:0;position:sticky;top:calc(var(--nav-h) + 32px)}
+/* foto e riquadro "dove" stanno nello stesso blocco: scorrono insieme e non si sovrappongono */
+.about__lato{grid-column:1 / 6;position:sticky;top:calc(var(--nav-h) + 32px);display:grid;gap:28px;min-width:0}
+.about__foto{margin:0;position:relative}
 .media--ritratto{aspect-ratio:4/5;max-width:100%}
 .media--ritratto img{inset:-8% 0;height:116%}
 .about__firma{
   position:absolute;right:-14px;bottom:28px;writing-mode:vertical-rl;transform:rotate(180deg);
   font-family:var(--f-mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--arancio);background:var(--nero);padding:14px 6px;
 }
-.about__testo{grid-column:7 / 13;grid-row:1 / span 2}
-.about__foto{grid-row:1}
-.about__dove{grid-column:1 / 6;grid-row:2;margin:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--linea)}
+.about__testo{grid-column:7 / 13}
+.about__dove{margin:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--linea)}
 .about__dove > div{padding:18px 0 0}
 .about__dove > div + div{padding-left:20px;border-left:1px solid var(--linea)}
 .about__dove dt{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--arancio)}
@@ -279,9 +280,8 @@ p{margin:0}
 .blocco h3{font-family:var(--f-titolo);font-weight:800;font-stretch:110%;text-transform:uppercase;font-size:.95rem;letter-spacing:.06em;margin-bottom:16px}
 .qualifiche{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 @media (max-width:900px){
-  .about__foto,.about__testo,.about__dove{grid-column:1 / -1;grid-row:auto}
-  .about__foto{position:relative;top:auto;max-width:460px}
-  .about__dove{max-width:460px}
+  .about__lato,.about__testo{grid-column:1 / -1}
+  .about__lato{position:relative;top:auto;max-width:460px}
 }
 @media (max-width:560px){.about__blocchi{grid-template-columns:1fr}}
 
