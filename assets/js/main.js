@@ -7,7 +7,7 @@ const CONFIG = {
   // MODIFICA: numero WhatsApp con prefisso, solo cifre (es. "393331234567"). Vuoto = non ancora disponibile.
   whatsapp: "",
   // MODIFICA: nome utente Instagram senza @ (es. "francescocavaliere.pt").
-  instagram: "",
+  instagram: "fran_cavs_elitept",
   // MODIFICA: messaggio già scritto quando si apre WhatsApp.
   messaggioWhatsapp: "Ciao Francesco, vorrei informazioni per iniziare un percorso.",
   // MODIFICA: indirizzo del servizio che riceve il modulo (es. Formspree). Vuoto = modulo in anteprima.
