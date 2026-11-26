@@ -365,7 +365,7 @@ if (contatori.length) {
       lista.appendChild(f);
     });
   } else {
-    lista.innerHTML = `<figure class="recensione recensione--vuota"><blockquote class="slot" data-slot="Recensioni Google">Qui mettiamo le recensioni vere della tua scheda Google.</blockquote></figure>`;
+    lista.innerHTML = `<figure class="recensione recensione--vuota"><blockquote class="slot" data-slot="Recensioni Google">Qui compariranno le recensioni vere della tua scheda Google.</blockquote></figure>`;
   }
 
   const collega = (sel, url) => {

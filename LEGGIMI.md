@@ -51,3 +51,7 @@ In `index.html`, nel blocco `application/ld+json` in alto: quando li hai, aggiun
 - Indirizzo definitivo in `<link rel="canonical">` (in alto in `index.html`)
 - Servizi del Metodo confermati da Francesco (per toglierne uno, cancella il suo `<article>`)
 - Informativa privacy collegata al consenso del modulo
+
+## Dopo ogni modifica a CSS o JS
+In fondo e in cima a `index.html` i file hanno un numero di versione (`style.css?v=…`, `main.js?v=…`).
+Cambialo (es. `20261126-3` → `20261127-1`) così i browser scaricano subito la versione nuova invece di quella salvata.
